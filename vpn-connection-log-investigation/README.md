@@ -36,7 +36,7 @@ Evidence: ![Connections Timeline](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Po
 
 Analysis of connection logs identified **238.163.231.224** as the IP responsible for the highest number of VPN connections.
 
-Evidence: https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/vpn-connection-log-investigation/evidence/high-volume-vpn-ip.png
+Evidence:![](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/vpn-connection-log-investigation/evidence/high-volume-vpn-ip.png)
 
 High connection frequency from a single IP may indicate:
 
@@ -153,8 +153,7 @@ Continued connections from terminated accounts may indicate:
 
 A query was executed to identify connection events originating from the **United States** involving specific users: **James** or **Albert**.
 
-Evidence:![](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/%22vpn-connection-log-investigation/evidence/Source_Country%20%3A%20%5C%22United%20States%5C%22%20and%20UserName%20%3A%20%5C%22Albert%5C%22%20or%20UserName%20%3A%20%5C%22James%5C%22%20.png%22)
-
+Evidence:![](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/vpn-connection-log-investigation/evidence/kpl%20query.png)
 
 
 
