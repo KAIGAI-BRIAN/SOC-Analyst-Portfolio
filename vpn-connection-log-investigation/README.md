@@ -26,7 +26,7 @@ Relevant fields analyzed included:
 
 A total of **2,861 VPN connection events** were returned during this period.
 
-Evidence: https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/vpn-connection-log-investigation/evidence/Timeline%20log%20analysis%20(elastic).png
+Evidence: ![Connections Timeline](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/vpn-connection-log-investigation/evidence/Timeline%20log%20analysis%20(elastic).png)
 
 ---
 
@@ -46,14 +46,14 @@ High connection frequency from a single IP may indicate:
 
 Further filtering revealed **48 connections from this IP outside the New York region**, suggesting geographically distributed access attempts.
 
-Evidence: https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/vpn-connection-log-investigation/evidence/connections%20outside%20NY.png
+Evidence: [Connections Outside NY](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/vpn-connection-log-investigation/evidence/connections%20outside%20NY.png)
 ---
 
 ### User Generating the Most VPN Traffic
 
 Log aggregation showed that **user "James" generated the highest volume of VPN connection events**.
 
-Evidence: https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/vpn-connection-log-investigation/evidence/top-user-traffic..png
+Evidence:[](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/vpn-connection-log-investigation/evidence/top-user-traffic..png)
 
 High connection volume from a single account can indicate:
 
@@ -71,7 +71,7 @@ Filtering VPN connection events for **user "Emanda"** revealed that **IP 107.14.
 
 Evidence: 
 
-![User Specific Source IP] https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/vpn-connection-log-investigation/evidence/emanda-source-ip.png
+![User Specific Source IP](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/vpn-connection-log-investigation/evidence/emanda-source-ip.png)
 
 This correlation helps identify:
 
@@ -151,7 +151,7 @@ Continued connections from terminated accounts may indicate:
 
 A query was executed to identify connection events originating from the **United States** involving specific users: **James** or **Albert**.
 
-Evidence:https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/%22vpn-connection-log-investigation/evidence/Source_Country%20%3A%20%5C%22United%20States%5C%22%20and%20UserName%20%3A%20%5C%22Albert%5C%22%20or%20UserName%20%3A%20%5C%22James%5C%22%20.png%22
+Evidence:[](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/%22vpn-connection-log-investigation/evidence/Source_Country%20%3A%20%5C%22United%20States%5C%22%20and%20UserName%20%3A%20%5C%22Albert%5C%22%20or%20UserName%20%3A%20%5C%22James%5C%22%20.png%22)
 
 
 
