@@ -11,7 +11,7 @@ Each folder represents a case or lab investigation, including the analysis proce
 | Case | Description | Tools / Skills |
 |------|-------------|----------------|
 | [VPN Connection Log Investigation](vpn-connection-log-investigation) | Analysis of VPN connection logs to identify abnormal connection patterns, traffic spikes, failed connection attempts, post-termination activity, and high-volume source IPs. | Elastic Stack, KQL queries, log analysis, incident triage |
-| [PowerShell-Based Phishing Intrusion & Data Exfiltration Investigation]([(https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/tree/main/PowerShell-Based%20Phishing%20Intrusion%20%26%20Data%20Exfiltration%20Investigation)) | Analysis of a phishing-based compromise that resulted in malicious PowerShell execution, attacker-controlled activity, and data exfiltration from a Windows workstation. | Linkparser, Powershell, Log analysis, Attacker activity analysis |
+| [PowerShell-Based Phishing Intrusion & Data Exfiltration Investigation](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/tree/main/PowerShell-Based%20Phishing%20Intrusion%20%26%20Data%20Exfiltration%20Investigation) | Analysis of a phishing-based compromise that resulted in malicious PowerShell execution, attacker-controlled activity, and data exfiltration from a Windows workstation. | Linkparser, Powershell, Log analysis, Attacker activity analysis |
 
 ---
 
