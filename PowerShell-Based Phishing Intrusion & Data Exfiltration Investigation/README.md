@@ -126,17 +126,18 @@ Evidence: ![exfil.png](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blo
 This behaviour is consistent with DNS-based data exfiltration techniques designed to bypass traditional network monitoring controls.
 
 ## MITRE ATT&CK Mapping
-Tactic	Technique	ID
-Initial Access	Phishing	T1566.001
-Execution	PowerShell	T1059.001
-Defense Evasion	Obfuscation	T1027
-Defense Evasion	Hidden Window	T1564.003
-Command & Control	Ingress Tool Transfer	T1105
-Discovery	System Information Discovery	T1082
-Collection	Data from Local System	T1005
-Exfiltration	DNS Exfiltration	T1048
+| Tactic            | Technique                    | MITRE ATT&CK ID |
+|-------------------|------------------------------|-----------------|
+| Initial Access    | Phishing                     | T1566.001       |
+| Execution         | PowerShell                   | T1059.001       |
+| Defense Evasion   | Obfuscation                  | T1027           |
+| Defense Evasion   | Hidden Window                | T1564.003       |
+| Command & Control | Ingress Tool Transfer        | T1105           |
+| Discovery         | System Information Discovery | T1082           |
+| Collection        | Data from Local System       | T1005           |
+| Exfiltration      | DNS Exfiltration             | T1048           |
 
-## Detection Opportunities
+## Detection
 ## PowerShell Monitoring
 Detect encoded PowerShell (-enc)
 Detect Invoke-Expression (iex) usage
