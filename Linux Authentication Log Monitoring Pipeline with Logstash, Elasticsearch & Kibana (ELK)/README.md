@@ -281,15 +281,14 @@ One issue encountered during deployment was that Logstash could not initially re
 Adding the logstash user to the adm group and restarting the service resolved the issue.
 
 This highlighted the importance of understanding Linux permissions when deploying log collection pipelines.
-Lessons Learned
 
+## Lessons Learned
 Through this project, I gained practical experience with:
-
 * Building an ELK log ingestion pipeline
-* Collecting Linux authentication logs
-* Parsing unstructured syslog data with Grok
-* Normalizing timestamps for Elasticsearch
-* Managing Linux permissions for Logstash
+* Collecting Linux authentication logs using LOgstash
+* Parsing unstructured syslog data with Grok filters
+* Normalizing timestamps for accurate time based analysis in Elasticsearch 
+* Managing Linux file permissions to enable Logstash 
 * Creating searchable indices
 * Investigating authentication events in Kibana
 * Understanding how authentication telemetry supports SOC investigations
@@ -300,10 +299,10 @@ Potential enhancements include:
 
 * Extracting usernames and source IP addresses from authentication events.
 * Parsing sudo commands into individual fields
-* Detecting brute-force attacks using threshold rules
+* Detecting brute-force attacks using threshold based detection rules
 * Creating Kibana dashboards for authentication activity
 * Building visualizations for failed login trends
-* Adding alerting with ElastAlert or Elastic Detection Rules
+* Adding alerting with ElastAlert or Elastic Security Detection Rules
 * Collecting logs from multiple Linux hosts
 * Replacing direct file monitoring with Filebeat for scalable log shipping
 
@@ -314,13 +313,13 @@ This project demonstrates the complete workflow of collecting, parsing, indexing
 ## Skills Demonstrated
 * Linux Administration
 * Logstash Pipeline Configuration
+* ELK Stack
 * Grok Pattern Development
-* Log Parsing
-* Elasticsearch
-* Kibana
-* Linux Permissions
-* Authentication Monitoring
-* Security Telemetry
-* Log Analysis
-* SOC Fundamentals
+* Log Parsing & Normalization
+* Elasticsearch Index Management
+* Kibana Data Exploration
+* Linux File Permissions
+* Authentication Log Monitoring
+* Security Telemetry Analysis
+* SOC Investigation Fundamentals
 
