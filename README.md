@@ -1,6 +1,6 @@
 # SOC Analyst Portfolio
 
-### This repository showcases hands-on Security Operations Center (SOC) investigations, digital forensics exercises, malware analysis, and log management projects. Through realistic laboratory-based investigations, these projects demonstrate practical SOC analyst skills in log analysis, incident investigation, attacker activity analysis, memory forensics, malware analysis, indicator of compromise (IOC) development, and evidence-based reporting using industry-standard tools and methodologies.
+### This repository showcases hands-on Security Operations Center (SOC) investigations, digital forensics exercises, malware analysis, and log management projects. Through realistic laboratory-based investigations, demonstrating practical SOC analyst skills in log analysis, incident investigation, attacker activity analysis, memory forensics, malware analysis, indicator of compromise (IOC) development, and evidence-based reporting using industry-standard tools and methodologies.
 
 Each folder represents a project, case or lab investigation, including the analysis process, evidence screenshots, and findings. More investigations will be added as training and practical work progress.
 
