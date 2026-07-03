@@ -221,7 +221,9 @@ sudo systemctl restart logstash
 
 sudo systemctl status logstash
 ```
-After restarting, the service should report: ``` active(running)![](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/Linux%20Authentication%20Log%20Monitoring%20Pipeline%20with%20Logstash%2C%20Elasticsearch%20%26%20Kibana%20(ELK)/screenshots/permissions%26restarting%20logstash.png)
+After restarting, the service should report: ``` active(running) ``` 
+
+![](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/Linux%20Authentication%20Log%20Monitoring%20Pipeline%20with%20Logstash%2C%20Elasticsearch%20%26%20Kibana%20(ELK)/screenshots/permissions%26restarting%20logstash.png)
 
 ## Visualizing the Log Data
 Once the configuration settings are ready, the permissions have been set, and Logstash has been restarted. The last thing to do is to hop into Kibana and take a look the logs. Set up a Data view to visualize the auth log index pattern (auth-logs-*).
