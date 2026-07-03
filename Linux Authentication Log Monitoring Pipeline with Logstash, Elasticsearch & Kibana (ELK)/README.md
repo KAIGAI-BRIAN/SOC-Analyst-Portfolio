@@ -239,6 +239,7 @@ Once the configuration settings are ready, the permissions have been set, and Lo
 ## Investigating Logs in Kibana
 
 Using Kibana Discover allows authentication events to be searched and filtered.
+! [](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/Linux%20Authentication%20Log%20Monitoring%20Pipeline%20with%20Logstash%2C%20Elasticsearch%20%26%20Kibana%20(ELK)/screenshots/Kibana%20Discover.png)
 
 Useful fields include:
 
@@ -254,6 +255,8 @@ program : sshd
 program : sudo
 msg : "Failed password"
 msg : "Accepted password"
+
+![](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/Linux%20Authentication%20Log%20Monitoring%20Pipeline%20with%20Logstash%2C%20Elasticsearch%20%26%20Kibana%20(ELK)/screenshots/example%20search.png)
 
 These filters allow analysts to quickly identify suspicious authentication activity.
 
