@@ -234,7 +234,7 @@ Once the configuration settings are ready, the permissions have been set, and Lo
 4. Click Data Views under Kibana
 5. Choose Create data view
 
-   [](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/Linux%20Authentication%20Log%20Monitoring%20Pipeline%20with%20Logstash%2C%20Elasticsearch%20%26%20Kibana%20(ELK)/screenshots/create%20data%20view.png)
+   ![](https://github.com/KAIGAI-BRIAN/SOC-Analyst-Portfolio/blob/main/Linux%20Authentication%20Log%20Monitoring%20Pipeline%20with%20Logstash%2C%20Elasticsearch%20%26%20Kibana%20(ELK)/screenshots/create%20data%20view.png)
 
 ## Investigating Logs in Kibana
 
