@@ -59,7 +59,7 @@ Build a centralized authentication log monitoring pipeline capable of:
 --------
 
 ## Authentication Log Source
-Linux stores authentication events in: /var/log/auth.log
+Linux stores authentication events in: ``` /var/log/auth.log ```
 
 This log contains events including:
 
@@ -75,6 +75,14 @@ These logs are among the first data sources examined during incident investigati
 
 ------
 ## Logstash Configuration
+To configure Logstash, create a pipeline configuration file named auth.conf inside the Logstash pipeline configuration directory.
+``` bash
+cd /etc/logstash/conf.d
+
+sudo nano auth.conf
+```
+
+The following sections build the complete Logstash pipeline. The input plugin ingests authentication logs from the Linux host, the filter stage parses and normalizes the events, and the output plugin forwards the structured data to Elasticsearch for indexing and analysis.
 
 ## 1. Input Configuration
 
@@ -111,9 +119,9 @@ Linux authentication logs are initially stored as unstructured syslog messages. 
     match => ["timestamp", "ISO8601"]
     target => "@timestamp"
   }
+}
   ```
 
-}
 
 ## Grok Pattern Breakdown
 |Pattern	| Extracted Field|
@@ -154,11 +162,11 @@ output {
  }
 }
 ```
-Daily indices are created using the format: auth-logs-%{+YYYY.MM.dd}
+Daily indices are created using the format: ``` auth-logs-%{+YYYY.MM.dd} ```
 This improves search performance and simplifies data retention.
 
 ## Complete Logstash Pipeline
-The final auth.conf file should appear as shown below. To recap, we are using the file plugin to read the auth.log file, filtering it with Grok and date, and sending the output to Elasticsearch on port 9200, where it will appear in the Kibana instance.
+After combining the input, filter, and output sections, the completed ``` auth.conf ``` file should resemble the following configuration. To recap, we are using the file plugin to read the auth.log file, filtering it with Grok and date, and sending the output to Elasticsearch on port 9200, where it will appear in the Kibana instance.
 
 ```conf
 input {
@@ -181,7 +189,6 @@ filter {
     match => ["timestamp", "ISO8601"]
     target => "@timestamp"
   }
-
 }
 
 output {
